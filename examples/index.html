@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Form Data</title>
+    </head>
+    <body>
+        <h1>Form Data</h1>
+        <form>
+            <div class="form-control">
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" value="Jack" />
+            </div>
+            <div class="form-control">
+                <label for="age">Age</label>
+                <input id="age" name="age" type="number" value="14" />
+            </div>
+
+            <div class="form-control">
+                <label for="slider">Slider</label>
+                <input
+                    id="slider"
+                    name="slider"
+                    type="range"
+                    step="10"
+                    min="10"
+                    max="60"
+                />
+            </div>
+            <textarea name="patterns">Lorem</textarea>
+
+            <div class="form-control">
+                <button>Submit</button>
+            </div>
+        </form>
+
+        <script src="index.js"></script>
+    </body>
+</html>

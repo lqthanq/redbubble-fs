@@ -1,0 +1,298 @@
+@import "/fonts/sf-pro-display/font.css";
+@import "/fonts/shopify-sans/font.css";
+@import "~antd/lib/style/index.less";
+@import "components.less";
+@import "../node_modules/react-quill/dist/quill.snow.css";
+@import "~nprogress/nprogress.css";
+@font-family: "Shopify Sans Web", "SF Pro Display", "Segoe UI", Roboto,
+  "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+  "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+@font-size-base: 14px;
+@border-radius-base: 4px;
+@height-base: 36px;
+@height-lg: 44px;
+@height-sm: 30px;
+@primary-color: #5c6ac4; // primary color for all components
+
+@padding-lg: 26px; // containers
+@padding-md: 18px; // small containers and buttons
+@padding-sm: 14px; // Form controls and items
+@padding-xs: 10px; // small items
+@padding-xss: 4px; // more small
+//Modal
+//@modal-header-close-size: 56px;
+@modal-header-padding: 18px 16px;
+@modal-body-padding: 16px;
+@card-padding-base: 16px;
+//@modal-footer-padding-horizontal: 26px;
+
+:root {
+  --primary-color: @primary-color;
+  --success-color: @success-color;
+  --error-color: @error-color;
+  --warning-color: @warning-color;
+  --custom-link-color: @custom-link-color;
+  --text-color: @text-color;
+}
+
+@link-color: #006fbb; // link color
+@link-hover-color: #084e8a; // link color
+@custom-link-color: #454f5b;
+// @success-color: #52c41a; // success state color
+// @warning-color: #faad14; // warning state color
+// @error-color: #f5222d; // error state color
+// @font-size-base: 14px; // major text font size
+// @heading-color: rgba(0, 0, 0, 0.85); // heading text color
+@text-color: #454f5b; // major text color
+// @text-color-secondary: rgba(0, 0, 0, 0.45); // secondary text color
+// @disabled-color: rgba(0, 0, 0, 0.25); // disable state color
+// @border-radius-base: 4px; // major border radius
+// @border-color-base: #d9d9d9; // major border color
+// @box-shadow-base: 0 2px 8px rgba(0, 0, 0, 0.15); // major shadow for layers
+// @btn-line-height: 36px;
+// // css main menu
+
+// .ant-menu-horizontal {
+//   line-height: 36px;
+// }
+// .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item,
+// .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu {
+//   margin: 0 10px;
+//   margin-top: -1px;
+//   margin-bottom: 0;
+//   padding: 0 20px;
+// }
+// .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-selected,
+// .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item:hover {
+//   border: none;
+//   background: rgba(0, 0, 0, 0.4);
+//   border-radius: 5px;
+// }
+// .ant-menu-horizontal > .ant-menu-item {
+//   border-bottom: none;
+//   border-radius: 5px;
+// }
+
+.ant-modal {
+  &.modal-fixed {
+    .ant-modal-content {
+      position: fixed;
+      width: 100%;
+      max-height: 100%;
+      left: 0;
+      top: 0;
+      border-radius: 0;
+    }
+  }
+}
+
+// filter
+.ant-divider {
+  &.ant-divider-horizontal {
+    &.ant-divider-with-text-left {
+      &::before {
+        width: 0;
+      }
+
+      .ant-divider-inner-text {
+        padding-left: 0;
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+.ant-form-horizontal {
+  .ant-form-item-label {
+    padding: 0 0 5px;
+
+    &.ant-col-24 {
+      > label {
+        height: auto;
+      }
+    }
+  }
+}
+
+.ant-btn-link {
+  color: #5c6ac4;
+}
+
+.ant-menu-inline .ant-menu-item,
+.ant-menu-inline .ant-menu-submenu-title {
+  width: 100% !important;
+}
+
+.ant-menu-inline-collapsed {
+  width: 60px;
+}
+
+.ant-table-tbody > tr > td {
+  z-index: 1;
+}
+
+#nprogress {
+  .spinner-icon {
+    display: none;
+  }
+}
+
+.ant-avatar {
+  &.object-fix-contain {
+    img {
+      object-fit: contain;
+    }
+  }
+}
+.order-component {
+  .ant-tabs-tab {
+    padding: 18px 0;
+    margin: 0 40px 0 0 !important;
+
+    .ant-badge-count {
+      background-color: #dfe3e8;
+      color: #454f5b;
+      margin-left: 7px;
+    }
+  }
+}
+
+table tr th.ant-table-selection-column,
+table tr td.ant-table-selection-column {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.ant-table-wrapper table {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  color: #212b36;
+  font-weight: 300;
+}
+
+.ant-table-thead > tr > th {
+  font-weight: 400;
+}
+
+.ant-image-preview-mask {
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+//Quill
+.quill {
+  .ql-toolbar {
+    &.ql-snow {
+      border-color: #d9d9d9;
+      border-radius: @border-radius-base @border-radius-base 0 0;
+    }
+  }
+
+  .ql-container {
+    &.ql-snow {
+      border-color: #d9d9d9;
+      border-radius: 0 0 @border-radius-base @border-radius-base;
+    }
+  }
+}
+
+.ant-pagination {
+  .ant-pagination-item,
+  .ant-pagination-prev .ant-pagination-item-link,
+  .ant-pagination-next .ant-pagination-item-link {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg, #fff, #f9fafb);
+    border: 0.1rem solid #c4cdd5;
+    box-shadow: 0 1px 0 0 rgb(22 29 37 / 5%);
+    border-radius: 3px;
+    line-height: 1;
+    color: #212b36;
+    text-align: center;
+    cursor: pointer;
+    -webkit-user-select: none;
+    user-select: none;
+    text-decoration: none;
+    transition-duration: 0.2s;
+    transition-duration: var(--p-override-none, 0.2s);
+    transition-timing-function: cubic-bezier(0.64, 0, 0.35, 1);
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .ant-pagination-disabled {
+    transition: none;
+    background: linear-gradient(180deg, #f4f6f8, #f4f6f8);
+    color: #919eab;
+    cursor: default;
+    pointer-events: none;
+
+    .ant-pagination-item-link {
+      color: #919eab;
+    }
+  }
+
+  .ant-pagination-item-active {
+    background: linear-gradient(180deg, #6371c7, #5563c1);
+    border-color: #3f4eae;
+    box-shadow: inset 0 1px 0 0 #6774c8, 0 1px 0 0 rgb(22 29 37 / 5%),
+      0 0 0 0 transparent;
+
+    a {
+      color: #fff;
+    }
+  }
+
+  .ant-pagination-item:focus,
+  .ant-pagination-item:hover,
+  .ant-pagination-prev .ant-pagination-item-link:hover,
+  .ant-pagination-next .ant-pagination-item-link:hover {
+    background: linear-gradient(180deg, #f9fafb, #f4f6f8);
+    border-color: #c4cdd5;
+  }
+
+  .ant-pagination-item-active:focus,
+  .ant-pagination-item-active:hover {
+    background: linear-gradient(180deg, #5c6ac4, #4959bd);
+    border-color: #3f4eae;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .ant-pagination-options {
+    margin-left: 10px;
+  }
+}
+
+.ant-card-bordered {
+  box-shadow: 0 0 0 1px rgba(63, 63, 68, 0.05),
+    0 1px 3px 0 rgba(63, 63, 68, 0.15);
+  outline: 0.1rem solid transparent;
+  border: 0 none;
+}
+
+.ant-tree {
+  &.tree-transparent {
+    background-color: transparent;
+
+    &.ant-tree-show-line {
+      .ant-tree-switcher {
+        background-color: transparent;
+      }
+    }
+
+    .ant-tree-treenode-selected {
+      font-weight: bold;
+      color: @primary-color;
+    }
+  }
+}
+
+.ant-timeline-item-last {
+  padding-bottom: 0 !important;
+}
+
+.ant-timeline-item-last > .ant-timeline-item-content {
+  min-height: 0;
+}

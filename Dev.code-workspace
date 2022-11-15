@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "javascript-covers"
+		},
+		{
+			"path": "libraries-cover"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "javascript-covers"
+	}
+}

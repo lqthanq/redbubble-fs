@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'Shopify Sans Web';
+    src: url('ShopifySansWeb-Bold.eot');
+    src: url('ShopifySansWeb-Bold.eot?#iefix') format('embedded-opentype'),
+        url('ShopifySansWeb-Bold.woff2') format('woff2'),
+        url('ShopifySansWeb-Bold.woff') format('woff'),
+        url('ShopifySansWeb-Bold.ttf') format('truetype'),
+        url('ShopifySansWeb-Bold.svg#ShopifySansWeb-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Shopify Sans Web';
+    src: url('ShopifySansWeb-Medium.eot');
+    src: url('ShopifySansWeb-Medium.eot?#iefix') format('embedded-opentype'),
+        url('ShopifySansWeb-Medium.woff2') format('woff2'),
+        url('ShopifySansWeb-Medium.woff') format('woff'),
+        url('ShopifySansWeb-Medium.ttf') format('truetype'),
+        url('ShopifySansWeb-Medium.svg#ShopifySansWeb-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Shopify Sans Web';
+    src: url('ShopifySansWeb-Regular.eot');
+    src: url('ShopifySansWeb-Regular.eot?#iefix') format('embedded-opentype'),
+        url('ShopifySansWeb-Regular.woff2') format('woff2'),
+        url('ShopifySansWeb-Regular.woff') format('woff'),
+        url('ShopifySansWeb-Regular.ttf') format('truetype'),
+        url('ShopifySansWeb-Regular.svg#ShopifySansWeb-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
